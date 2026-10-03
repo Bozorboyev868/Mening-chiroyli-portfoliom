@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>JAHONGIR.B</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+@property --a{syntax:"<angle>";initial-value:0deg;inherits:false}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px 16px;background:#070b17;color:#fff;font-family:Outfit,system-ui,sans-serif;overflow-x:hidden}
+body::before,body::after{content:"";position:fixed;width:60vmax;height:60vmax;border-radius:50%;filter:blur(90px);z-index:0;pointer-events:none}
+body::before{left:-25vmax;top:-10vmax;background:radial-gradient(#10306a,transparent 65%);opacity:.7}
+body::after{right:-25vmax;bottom:-20vmax;background:radial-gradient(#4a1a6e,transparent 65%);opacity:.7}
+.card{position:relative;z-index:1;width:100%;max-width:548px;padding:34px 36px 40px;border-radius:44px;background:#0d111d;text-align:center}
+.card::before,.card::after{content:"";position:absolute;inset:0;border-radius:inherit;padding:3px;background:conic-gradient(from var(--a),#ff1f5a,#ffb400,#19e65a,#00d4ff,#7a3cff,#ff1f5a);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:spin 6s linear infinite;pointer-events:none}
+.card::after{inset:-2px;filter:blur(18px);opacity:.55;padding:10px;z-index:-1}
+@keyframes spin{to{--a:360deg}}
+.tools{position:relative;z-index:2;display:flex;justify-content:flex-end;gap:14px}
+.tools button{width:46px;height:46px;border-radius:50%;border:1px solid #2a3040;background:#1a1f2c;color:#9aa3b5;cursor:pointer;display:grid;place-items:center}
+.tools button:hover{color:#fff}
+.avatar{width:140px;height:140px;margin:6px auto 0;border-radius:50%;border:2px solid #3a3f55;box-shadow:0 0 30px #5b2bd488;overflow:hidden;background:#1a1f2c}
+h1{margin:34px 0 36px;font-size:34px;letter-spacing:-.5px;display:flex;justify-content:center;align-items:center;gap:10px}
+h1 i{color:#a855f7;font-size:18px;font-style:normal}
+.links{display:flex;flex-direction:column;gap:18px}
+.link{position:relative;z-index:2;display:flex;align-items:center;gap:16px;padding:16px 22px;border-radius:26px;border:1px solid #262c3b;background:#151a27;color:#fff;text-decoration:none;font-weight:600;font-size:21px;transition:transform .2s,background .2s}
+.link:first-child{background:linear-gradient(90deg,#1e2230,#2a2e3b)}
+.link:hover{transform:translateY(-2px);background:#202638}
+.link .ic{width:60px;height:60px;border-radius:18px;display:grid;place-items:center;flex:none;font-size:34px}
+.link span.t{flex:1;text-align:left}
+.link .ar{color:#8a93a6}
+.foot{margin-top:40px;color:#566077;font-size:17px;letter-spacing:.3px}
+.toast{position:fixed;left:50%;bottom:30px;transform:translateX(-50%) translateY(80px);background:#1f2433;border:1px solid #333a4d;padding:12px 20px;border-radius:14px;transition:.3s;z-index:5}
+.toast.on{transform:translateX(-50%)}
+@media(max-width:480px){.card{padding:26px 20px 32px;border-radius:36px}h1{font-size:28px}.link{font-size:18px;padding:12px 16px}.link .ic{width:52px;height:52px}}
+</style>
+</head>
+<body>
+<main class="card">
+  <div class="tools">
+    <button id="share" aria-label="Ulashish"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg></button>
+    <button id="qr" aria-label="QR"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM20 14v1M14 20h1M18 19v2h3v-3"/></svg></button>
+  </div>
+
+  <div class="avatar"><img src="/Снимок экрана 2026-08-18 211713.png" alt="Jahongir" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+
+  <h1>JAHONGIR.B <i>✦</i></h1>
+
+  <div class="links">
+    <a class="link" href="https://t.me/Jaxon_programist" target="_blank" rel="noopener">
+      <span class="ic" style="background:#229ed9"><svg width="34" height="34" viewBox="0 0 24 24" fill="#fff"><path d="M21.5 3.3L2.9 10.5c-1.3.5-1.2 1.2-.2 1.5l4.7 1.5 1.8 5.5c.2.6.4.8.8.8s.6-.2.9-.5l2.3-2.3 4.7 3.5c.9.5 1.5.2 1.7-.8l3.1-14.8c.3-1.2-.5-1.8-1.2-1.3zM8.4 13.1l10.6-6.7c.5-.3.9-.1.5.2l-8.7 7.9-.3 3.6z"/></svg></span>
+      <span class="t">TELEGRAM</span><span class="ar">→</span></a>
+    <a class="link" href="https://instagram.com/Kadirovich_dev" target="_blank" rel="noopener">
+      <span class="ic" style="background:radial-gradient(circle at 30% 107%,#fdf497 0,#fd5949 45%,#d6249f 60%,#285aeb 90%)"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#fff"/></svg></span>
+      <span class="t">INSTAGRAM</span><span class="ar">→</span></a>
+    <a class="link" href="https://www.linkedin.com/in/jahongir-bozorboyev-901a89440" target="_blank" rel="noopener">
+      <span class="ic" style="background:#0a66c2"><svg width="32" height="32" viewBox="0 0 24 24" fill="#fff"><path d="M4.98 3.5a2.5 2.5 0 11-.01 5 2.5 2.5 0 01.01-5zM3 9.75h4V21H3zM9.5 9.75h3.8v1.6h.05c.53-1 1.84-2.05 3.8-2.05 4.06 0 4.8 2.67 4.8 6.14V21h-4v-4.9c0-1.17-.02-2.67-1.63-2.67-1.63 0-1.88 1.27-1.88 2.58V21h-4z"/></svg></span>
+      <span class="t">LINKEDIN</span><span class="ar">→</span></a>
+  </div>
+
+  <div class="foot">BARCHA MALUMOTLAR SHU JOYDA</div>
+</main>
+<div class="toast" id="toast"></div>
+<script>
+const t=document.getElementById('toast');
+function say(m){t.textContent=m;t.classList.add('on');setTimeout(()=>t.classList.remove('on'),2000)}
+document.getElementById('share').onclick=async()=>{
+  try{
+    if(navigator.share){await navigator.share({title:document.title,url:location.href});return}
+    await navigator.clipboard.writeText(location.href);say('Havola nusxalandi')
+  }catch(e){say('Ulashib bo\'lmadi')}
+};
+document.getElementById('qr').onclick=()=>say('QR tez orada qo\'shiladi');
+</script>
+</body>
+</html>
